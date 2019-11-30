@@ -1,7 +1,5 @@
 @ECHO OFF
 
-if not exist tests mkdir tests
-
 ECHO Running all assignment 5 tests
 ECHO Running test 1
 g++ -pedantic -Wall -Wextra -std=c++17 -o 01_PushPopEmptySize.exe 01_PushPopEmptySize.cpp
