@@ -1,6 +1,7 @@
 # Assignment-5-Tester
  
-Both of these testers compile, run, and compare the output of each program to their expected outputs.
+Both of these testers compile, run, and compare the output of each program to their expected outputs. All you need to do is to put them in the same folder as all the testing programs, their expected outputs, and `linkedlist.hpp`.
+
 On Mac and Linux, you may need to give the script permission to run using:
 ```
 chmod +x mac-linux-tester.sh
