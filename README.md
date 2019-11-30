@@ -142,3 +142,5 @@ Comparing files 04_generated_output.txt and 04_COMPAREOPERATORS_OUTPUT.TXT
 FC: no differences encountered
 ```
 
+## Thanks!
+Hope this helps streamline the process a little.
