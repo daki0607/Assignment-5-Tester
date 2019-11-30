@@ -1,6 +1,11 @@
 # Assignment-5-Tester
  
 Both of these testers compile, run, and compare the output of each program to their expected outputs.
+On Mac and Linux, you may need to give the script permission to run using:
+```
+chmod +x mac-linux-tester.sh
+```
+On Windows however, it is annoying to run from the terminal, so double-click the file itself.
 
 ## Compilation
 
@@ -72,6 +77,19 @@ fc {test number}_generated_output.txt {filename}_output.txt
   First: Lime Last: Lemon
   Testing first() and last() after list manipulation
 ```
+(Windows: Test Program 2 with part of line missing)
+```
+Comparing files 02_generated_output.txt and 02_FIRSTLAST_OUTPUT.TXT
+***** 02_generated_output.txt
+First: Grapefruit Last: Pineapple
+First: Lime Last: 
+Testing const first() and last():
+***** 02_FIRSTLAST_OUTPUT.TXT
+First: Grapefruit Last: Pineapple
+First: Lime Last: Lemon
+Testing const first() and last():
+*****
+```
 
 (Mac and Linux: Test Program 3 with extra lines and lines missing)
 ```
@@ -95,8 +113,32 @@ fc {test number}_generated_output.txt {filename}_output.txt
 - L contains "Apple"
 --- 16,18 ----
 ```
+(Windows: Test Program 3 with extra lines and lines missing)
+```
+Comparing files 03_generated_output.txt and 03_CLEARCONTAINS_OUTPUT.TXT
+***** 03_generated_output.txt
+L contains "Orange"
+
+***** 03_CLEARCONTAINS_OUTPUT.TXT
+L contains "Orange"
+L does not contain "Pomegranate"
+
+*****
+
+***** 03_generated_output.txt
+L contains "Apple"
+***** 03_CLEARCONTAINS_OUTPUT.TXT
+*****
+```
 
 (Mac and Linux: Test Program 4 with correct output)
 ```
 ```
 (The files were the same, so `diff` didn't output anything.)
+
+(Windows: Test Program 4 with correct output)
+```
+Comparing files 04_generated_output.txt and 04_COMPAREOPERATORS_OUTPUT.TXT
+FC: no differences encountered
+```
+
