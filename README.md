@@ -46,7 +46,7 @@ When a difference is encountered, the system's difference checker will display i
 
 (Mac and Linux)
 ```
-diff -u tests/{test number}_generated_output.txt {filename}_output.txt
+diff -c tests/{test number}_generated_output.txt {filename}_output.txt
 ```
 Stars `*` are assigned to the first file (the generated output) and Dashes `-` are assigned to the second file (the expected output).
 + A `!` in front of a line means part of the line differs between the files.
